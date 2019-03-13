@@ -29,7 +29,7 @@
                             Task Date</label>
                             <div class="col-sm-6">
                             <input type="text" readonly="" name="task_date" id="task_date" class="form-control datepicker" 
-                            value="{{ isset($edit_tasks->task_date) ? $edit_tasks->name : ''}}">
+                            value="{{ isset($edit_tasks->task_date) ? $edit_tasks->task_date : ''}}">
                             </div>
                         </div>
                         <div class="form-group">
