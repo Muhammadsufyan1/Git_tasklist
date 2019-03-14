@@ -66,9 +66,9 @@
                 </div>
             </div>
                 <audio style="display: none;" controls>
-                  <source src="resources/assets/Elephant trumpeting animals129.WAV" 
+                  <source src="resources/assets/Elephanttrumpetinganimals129.wav" 
                   type="audio/ogg">
-                  <source src="horse.mp3" type="audio/mpeg">
+                  <source src="resources/assets/Elephanttrumpetinganimals129.wav" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
             <!-- Current Tasks -->
@@ -161,7 +161,7 @@
             var date = get_current_date().trim();
             // console.log(date);
                 $('.table-striped tbody tr').each(function(i,e){
-                var reminder = $(this).children('td').eq(2).children('div').html()+' '+$(this).children('td').children('div').eq(4).html()
+                var reminder = $(this).children('td').eq(3).children('div').html()+' '+$(this).children('td').children('div').eq(4).html()
                 var task = $(this).children('td').eq(0).children('div').html();
                 // debugger;
                 if(date == reminder){
