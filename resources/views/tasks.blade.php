@@ -62,9 +62,15 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
-
+                <audio style="display: none;" controls>
+                  <source src="resources/assets/Elephant trumpeting animals129.WAV" 
+                  type="audio/ogg">
+                  <source src="horse.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
             <!-- Current Tasks -->
             @if (isset($tasks))
                 @if (count($tasks) > 0)
@@ -139,8 +145,12 @@
     </div>
   </div>
 </div>
-    <script type="text/javascript">        
+    <script type="text/javascript"> 
+
     $(document).ready(function(){  
+
+        // $('audio').trigger('play');
+
         $('.datepicker').datepicker({ 
             format: 'yyyy-mm-dd', 
             startDate: '-3d',
@@ -156,6 +166,7 @@
                 // debugger;
                 if(date == reminder){
                     $('#reminder').html(task);
+                     $('audio').trigger('play');
                     $('#Modal').modal('show');
                 }
             });
